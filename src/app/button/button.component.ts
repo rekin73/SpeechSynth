@@ -19,6 +19,7 @@ export class ButtonComponent implements OnInit {
     this.DataService.getData((dane) => {
 
       // console.log(this.dane, this.dane[1], this.dane.pl)
+      console.log(dane);
       this.dane = dane;
       this.slowo = dane[0].pl;
       this.ilosc = dane.length;

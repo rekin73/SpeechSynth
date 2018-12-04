@@ -14,14 +14,14 @@ export class FiszkiService {
   getData(cb) {
     const that = this;
     const params = new HttpParams().set('nr', '1');
-    this.httpClient.get('http://localhost/szumny/fiszki/index.php', { params })
+    this.httpClient.get('http://localhost/KalFiszki/index.php', { params })
       .subscribe((data) => {
         // console.log(data)
        /* data.forEach(element => {
           that.dane.push(element)
         });*/
         // this.dane = data;
-
+console.log(data);
         cb(data);
 
       },
