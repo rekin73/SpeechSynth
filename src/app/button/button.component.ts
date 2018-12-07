@@ -20,10 +20,10 @@ export class ButtonComponent implements OnInit {
 
       // console.log(this.dane, this.dane[1], this.dane.pl)
       console.log(dane);
-      this.dane = dane;
-      this.slowo = dane[0].pl;
-      this.ilosc = dane.length;
-      this.liczba = dane.length;
+      this.dane = dane.slowo;
+      this.slowo = this.dane[0].pl;
+      this.ilosc = this.dane.length;
+      this.liczba = this.dane.length;
     });
     // console.log(this. dane);
   }
