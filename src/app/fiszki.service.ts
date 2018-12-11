@@ -11,8 +11,8 @@ export class FiszkiService {
   constructor(private httpClient: HttpClient) {
 
   }
-  getData(cb) {
-    const that = this;
+  getData(cb:Function) {
+    
     const params = new HttpParams().set('nr', '1');
     this.httpClient.get('http://localhost:3000/KalFiszki/index.php', { params })
       .subscribe((data) => {
